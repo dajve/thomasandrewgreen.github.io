@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: turquoise;
     color: orange;
@@ -6,9 +10,18 @@ body {
     padding: 10px;
 }
 
+body#page_about_me {
+
+}
+
+body#page_about_rainforests {
+    background: green;
+}
+
 div.row {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: border-box;
 }
 
 div.row > div {
@@ -17,10 +30,27 @@ div.row > div {
     flex-shrink: 1;
 }
 
+div.row.images {
+    flex-wrap: wrap;
+}
+
+div.row.images img {
+    flex-shrink: 1;
+    flex-basis: 50%;
+    max-width: 50%;
+    padding: 10px;
+    display: inline-block;
+}
+
 h1 {
     color: green;
     margin-top: 0;
     margin-bottom: 10px;
+}
+
+body#page_about_rainforests h1 {
+    text-align: center;
+    color:brown;
 }
 
 p {
@@ -37,4 +67,13 @@ p {
 .about-rainforest p {
     background: transparent;
     color: green;
+}
+
+body#page_about_rainforests p {
+
+}
+
+body#page_about_rainforests .about-rainforest p {
+    color:black;
+    font-size: 1.5em;
 }
